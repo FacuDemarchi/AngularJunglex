@@ -10,6 +10,7 @@ import { CarritoComprasComponent } from './carrito-compras/carrito-compras.compo
 import { ProcesoCompraComponent } from './proceso-compra/proceso-compra.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
+import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     ComerciosComponent,
     DetalleComercioComponent,
     CarritoComprasComponent,
-    ProcesoCompraComponent
+    ProcesoCompraComponent,
+    PerfilUsuarioComponent
   ],
   imports: [
     BrowserModule,

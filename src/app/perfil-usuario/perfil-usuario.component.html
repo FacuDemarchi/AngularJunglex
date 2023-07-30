@@ -1,0 +1,13 @@
+<!-- Mostrar información del usuario -->
+<h2>Mi Perfil</h2>
+<p>Nombre: {{ userData.nombre }}</p>
+<p>Correo Electrónico: {{ userData.correo }}</p>
+
+<!-- Formulario para editar información del usuario -->
+<form (submit)="actualizarPerfil()">
+  <label>Nombre:</label>
+  <input type="text" [(ngModel)]="nombreUsuario" name="nombreUsuario">
+  <label>Correo Electrónico:</label>
+  <input type="email" [(ngModel)]="correoUsuario" name="correoUsuario">
+  <button type="submit">Actualizar</button>
+</form>
