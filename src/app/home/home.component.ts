@@ -1,3 +1,4 @@
+// home.component.ts
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+  comerciosDestacados: any[] = [
+    { nombre: 'Comercio 1' },
+    { nombre: 'Comercio 2' },
+    { nombre: 'Comercio 3' }
+  ];
 
+  productosDestacados: any[] = [
+    { nombre: 'Producto 1' },
+    { nombre: 'Producto 2' },
+    { nombre: 'Producto 3' }
+  ];
 }
