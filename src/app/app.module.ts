@@ -9,6 +9,7 @@ import { DetalleComercioComponent } from './detalle-comercio/detalle-comercio.co
 import { CarritoComprasComponent } from './carrito-compras/carrito-compras.component';
 import { ProcesoCompraComponent } from './proceso-compra/proceso-compra.component';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
