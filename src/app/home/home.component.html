@@ -1,1 +1,14 @@
-<p>home works!</p>
+<!-- home.component.html -->
+<div>
+    <h1>Bienvenido a nuestra plataforma</h1>
+    <h2>Comercios Destacados</h2>
+    <ul>
+      <li *ngFor="let comercio of comerciosDestacados">{{ comercio.nombre }}</li>
+    </ul>
+  
+    <h2>Productos Destacados</h2>
+    <ul>
+      <li *ngFor="let producto of productosDestacados">{{ producto.nombre }}</li>
+    </ul>
+  </div>
+  

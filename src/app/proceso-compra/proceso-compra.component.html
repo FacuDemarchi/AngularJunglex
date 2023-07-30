@@ -1,1 +1,9 @@
-<p>proceso-compra works!</p>
+<!-- proceso-compra.component.html -->
+<h2>Proceso de Compra</h2>
+<form>
+  <input type="text" placeholder="Nombre" [(ngModel)]="datosEnvio.nombre">
+  <input type="text" placeholder="Dirección" [(ngModel)]="datosEnvio.direccion">
+  <input type="text" placeholder="Teléfono" [(ngModel)]="datosEnvio.telefono">
+  <input type="text" placeholder="Método de Pago" [(ngModel)]="metodoPago">
+  <button (click)="finalizarCompra()">Finalizar Compra</button>
+</form>
