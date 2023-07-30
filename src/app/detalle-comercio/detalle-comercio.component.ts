@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+// detalle-comercio.component.ts
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-detalle-comercio',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./detalle-comercio.component.css']
 })
 export class DetalleComercioComponent {
-
+  @Input() comercio: any;
 }

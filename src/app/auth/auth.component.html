@@ -1,1 +1,18 @@
-<p>auth works!</p>
+<!-- auth.component.html -->
+<div>
+    <h2>Iniciar Sesión</h2>
+    <form>
+      <input type="email" placeholder="Correo electrónico" [(ngModel)]="login.email">
+      <input type="password" placeholder="Contraseña" [(ngModel)]="login.password">
+      <button (click)="loginUser()">Iniciar Sesión</button>
+    </form>
+  
+    <h2>Registro</h2>
+    <form>
+      <input type="text" placeholder="Nombre" [(ngModel)]="register.name">
+      <input type="email" placeholder="Correo electrónico" [(ngModel)]="register.email">
+      <input type="password" placeholder="Contraseña" [(ngModel)]="register.password">
+      <button (click)="registerUser()">Registrarse</button>
+    </form>
+  </div>
+  
