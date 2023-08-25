@@ -8,11 +8,18 @@ import { ComerciosService } from '../comercios.service';
   styleUrls: ['./comercios.component.css']
 })
 export class ComerciosComponent implements OnInit {
-  listaComercios: any[] = [];
+  Comercios: any[] = [];
 
   constructor(private comerciosService: ComerciosService) { }
 
   ngOnInit() {
-    this.listaComercios = this.comerciosService.getComercios();
+    this.comerciosService.obtenerListaComercios().subscribe(
+      (data: any) => {
+        this.Comercios = data
+      },
+      (error: any) => {
+        console.error('Error al obtener lista de comercios', error);
+      }
+    )
   }
 }
