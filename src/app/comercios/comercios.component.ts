@@ -22,4 +22,9 @@ export class ComerciosComponent implements OnInit {
       }
     )
   }
+
+  filtrarComerciosCategoria(categoia: any) {}
+
+  filtrarComerciosTag(tag: any) {}
+  
 }
